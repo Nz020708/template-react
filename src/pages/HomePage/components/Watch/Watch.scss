@@ -1,0 +1,138 @@
+@import '../../../../abstracts/helpers';
+@import '../../../../abstracts/variables';
+
+#watch {
+    .summary {
+      color: $text-color;
+      display: flex;
+      flex-direction: column;
+      .line {
+        width: 50px;
+        height: 6px;
+        background-color: $line-color;
+        margin-top: 13px;
+      }
+      h2 {
+        font-size: 52px;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 14px;
+        vertical-align: top;
+        line-height: 13pt;
+        margin-top: 15px;
+        max-width: 469px;
+        height: 40px;
+      }
+      a {
+        color: $main-blue;
+        margin-top: 30px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #watch {
+      .section-image {
+        img {
+          max-width: 300px;
+          height: 290px;
+        }
+      }
+      .summary {
+        color: $text-color;
+        .line {
+          width: 50px;
+          height: 6px;
+          background-color: $line-color;
+          margin-top: 13px;
+        }
+        h2 {
+          font-size: 42px;
+          margin-top: 15px;
+        }
+        p {
+          font-size: 10px;
+          vertical-align: top;
+          line-height: 13pt;
+          margin-top: 15px;
+          max-width: 469px;
+          height: 40px;
+        }
+        a {
+          color: $main-blue;
+          margin-top: 30px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 790px) {
+    #watch {
+      .section-image {
+        display: none;
+      }
+      .summary {
+        color: $text-color;
+        .line {
+          width: 50px;
+          height: 6px;
+          background-color: $line-color;
+          margin-top: 13px;
+        }
+        h2 {
+          font-size: 35px;
+          margin-top: 15px;
+        }
+        p {
+          font-size: 13px;
+          vertical-align: top;
+          line-height: 13pt;
+          margin-top: 15px;
+          max-width: 469px;
+          height: 40px;
+        }
+        a {
+          color: $main-blue;
+          margin-top: 30px;
+          font-size: 13px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #watch {
+      .section-image {
+        display: none;
+      }
+      .summary {
+        color: $text-color;
+        .line {
+          width: 50px;
+          height: 6px;
+          background-color: $line-color;
+          margin-top: 13px;
+        }
+        h2 {
+          font-size: 30px;
+          margin-top: 15px;
+        }
+        p {
+          font-size: 11px;
+          vertical-align: top;
+          line-height: 13pt;
+          margin-top: 15px;
+          max-width: 469px;
+          height: 40px;
+        }
+        a {
+          color: $main-blue;
+          margin-top: 30px;
+          font-size: 11px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }

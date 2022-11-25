@@ -1,0 +1,66 @@
+@import '../../abstracts/variables';
+@import '../../abstracts/helpers';
+header {
+    position:sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: $background-color;
+    height: 120px;
+    width: 100%;
+   
+  }
+  @media screen and (max-width: 895px) {
+    header {
+       
+      nav {
+        justify-content: space-evenly;
+        h1 {
+          font-size: 20px;
+        }
+        ul {
+          position: fixed;
+          left: -100%;
+          top: 5rem;
+          flex-direction: column;
+          background-color: $background-color;
+          width: 100%;
+          border-radius: 10px;
+          text-align: center;
+          transition: 0.3s;
+          box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+          &.active {
+            left: 0;
+          }
+          li {
+            margin: 2.5rem 0;
+          }
+        }
+        .hamburger {
+          display: block;
+          cursor: pointer;
+          &.active {
+            .bar {
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+              }
+              &:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+              }
+            }
+          }
+        }
+        .sign_in_up {
+          font-size: 13px;
+          margin: 0;
+          padding: 0;
+          button {
+            padding: 8px 15px 8px 15px;
+          }
+        }
+      }
+    }
+  }

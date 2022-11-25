@@ -1,0 +1,319 @@
+@import '../../../../abstracts/helpers';
+@import '../../../../abstracts/variables';
+
+#online_education {
+    text-align: center;
+    h5 {
+      font-size: 16px;
+      color: $main-blue;
+    }
+  
+    .summary {
+      color: $text-color;
+      min-height: 150px;
+      h2 {
+        font-size: 52px;
+        margin-top: 7px;
+      }
+      p {
+        font-size: 17px;
+        vertical-align: top;
+        letter-spacing: 1px;
+        line-height: 24px;
+        width: 469px;
+        margin: 0 auto;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+    }
+    .cards-row {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 30px;
+  
+      .card {
+        position: relative;
+        background-color: white;
+        width: 238px;
+        .sale {
+          color: $text-color;
+          width: 62px;
+          height: 44px;
+          background-color: $line-color;
+          position: absolute;
+          padding: 15px;
+          top: 20px;
+        }
+        img {
+          width: 238px;
+        }
+  
+        .main {
+          padding: 25px 25px 35px;
+          h3 {
+            margin-top: 20px;
+          }
+          p {
+            font-size: 15px;
+            color: gray;
+            margin: 10px 0px;
+            letter-spacing: 0.2px;
+          }
+          .sales {
+            display: flex;
+            color: gray;
+            p {
+              margin: 0;
+            }
+          }
+          .price {
+            display: flex;
+            p {
+              font-weight: bold;
+              margin: 7px;
+            }
+            p:nth-child(2) {
+              color: #40bb15;
+            }
+          }
+          .info {
+            margin-top: 10px;
+            font-size: 12px;
+            i {
+              color: $main-blue;
+            }
+            .orange {
+              color: orange;
+            }
+          }
+          button {
+            padding: 15px 40px 15px 40px;
+            margin-top: 30px;
+            background-color: transparent;
+            color: $main-blue;
+            border: 1px solid $main-blue;
+            cursor: pointer;
+            border-radius: 35px;
+            &:hover {
+              background-color: $main-blue;
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #online_education {
+      text-align: center;
+      h5 {
+        font-size: 16px;
+        color: $main-blue;
+      }
+  
+      .summary {
+        color: $text-color;
+  
+        h2 {
+          font-size: 52px;
+          margin-top: 7px;
+        }
+        p {
+          font-size: 14px;
+          vertical-align: top;
+          line-height: 24px;
+          width: 469px;
+          height: 40px;
+          margin: 0 auto;
+        }
+      }
+      .cards-row {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 30px;
+        .card {
+          position: relative;
+          background-color: white;
+          width: 450px;
+          // height: 858px;
+          margin: 0 auto;
+          .sale {
+            color: $text-color;
+            width: 62px;
+            height: 44px;
+            background-color: $line-color;
+            position: absolute;
+            padding: 15px;
+            top: 20px;
+          }
+          img {
+            width: 450px;
+          }
+  
+          .main {
+            padding: 25px 25px 35px;
+            h3 {
+              margin-top: 20px;
+            }
+            p {
+              font-size: 15px;
+              color: gray;
+              margin: 10px 0px;
+            }
+            .sales {
+              display: flex;
+              color: gray;
+              p {
+                margin: 0;
+              }
+            }
+            .price {
+              display: flex;
+              p {
+                font-weight: bold;
+                margin: 7px;
+              }
+              p:nth-child(2) {
+                color: #40bb15;
+              }
+            }
+            .info {
+              margin-top: 10px;
+              font-size: 12px;
+              i {
+                color: $main-blue;
+              }
+              .orange {
+                color: orange;
+              }
+            }
+            button {
+              padding: 15px 40px 15px 40px;
+              margin-top: 30px;
+              background-color: transparent;
+              color: $main-blue;
+              border: 1px solid $main-blue;
+              cursor: pointer;
+              border-radius: 35px;
+              &:hover {
+                background-color: $main-blue;
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 950px) {
+    #online_education {
+      text-align: center;
+      h5 {
+        font-size: 9px;
+        color: $main-blue;
+      }
+  
+      .summary {
+        color: $text-color;
+  
+        h2 {
+          font-size: 24px;
+          margin-top: 7px;
+        }
+        p {
+          font-size: 10px;
+          vertical-align: top;
+          line-height: 24px;
+          width: 265px;
+          height: 40px;
+          margin: 0 auto;
+        }
+      }
+      .cards-row {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 30px;
+        .card {
+          position: relative;
+          background-color: white;
+          max-width: 245px;
+          // height: 650px;
+          margin: 0 auto;
+          .sale {
+            color: $text-color;
+            width: 62px;
+            height: 44px;
+            background-color: $line-color;
+            position: absolute;
+            padding: 15px;
+            top: 20px;
+          }
+          img {
+            max-width: 245px;
+          }
+  
+          .main {
+            padding: 25px 25px 35px;
+            h3 {
+              margin-top: 20px;
+            }
+            p {
+              font-size: 15px;
+              color: gray;
+              margin: 10px 0px;
+            }
+            .sales {
+              display: flex;
+              color: gray;
+              p {
+                margin: 0;
+              }
+            }
+            .price {
+              display: flex;
+              p {
+                font-weight: bold;
+                margin: 7px;
+              }
+              p:nth-child(2) {
+                color: #40bb15;
+              }
+            }
+            .info {
+              margin-top: 10px;
+              font-size: 12px;
+              i {
+                color: $main-blue;
+              }
+              .orange {
+                color: orange;
+              }
+            }
+            button {
+              padding: 15px 40px 15px 40px;
+              margin-top: 30px;
+              background-color: transparent;
+              color: $main-blue;
+              border: 1px solid $main-blue;
+              cursor: pointer;
+              border-radius: 35px;
+              &:hover {
+                background-color: $main-blue;
+                color: $text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

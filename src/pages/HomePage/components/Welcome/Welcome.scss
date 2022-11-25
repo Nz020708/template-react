@@ -1,0 +1,389 @@
+@import '../../../../abstracts/helpers';
+@import '../../../../abstracts/variables';
+
+#welcome {
+    padding-top: 50px;
+    position: relative;
+  
+    .flex-container {
+      overflow: hidden;
+      min-height: 760px;
+  
+      .slide {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 1s;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .hero-img {
+          width: 600px;
+          height: 500px;
+          border-radius: 50%;
+        }
+      }
+      .slide.active {
+        opacity: 1;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .prev {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+  
+      .next {
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+  
+      .prev::after,
+      .next::after {
+        content: "";
+        position: absolute;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 3px;
+        width: 40%;
+        height: 40%;
+      }
+  
+      .next::after {
+        top: 50%;
+        right: 50%;
+        transform: translate(25%, -50%) rotate(-45deg);
+      }
+  
+      .prev::after {
+        top: 50%;
+        right: 50%;
+        transform: translate(75%, -50%) rotate(135deg);
+      }
+  
+      .slider_nav {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        .slider_navlink {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          border: 1px #fff solid;
+          background-color: #333;
+          opacity: 1;
+          margin: 0 10px 0 10px;
+          cursor: pointer;
+        }
+        .slider_navlink.active {
+          background-color: #fff;
+          border: 1px #333 solid;
+        }
+      }
+      color: $text-color;
+  
+      h1 {
+        font-size: 58px;
+        margin-top: 7px;
+        width: 542px;
+      }
+      p {
+        font-size: 20px;
+        vertical-align: top;
+        line-height: 30pt;
+        margin: 0;
+      }
+      button {
+        padding: 15px 40px 15px 40px;
+        margin-top: 40px;
+        cursor: pointer;
+      }
+      .getbtn {
+        background-color: $main-blue;
+        color: $text-color;
+        gap: 10px;
+        border: 0;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid $main-blue;
+          color: $main-blue;
+        }
+      }
+      .learnbtn {
+        border: 1px solid $main-blue;
+        background: transparent;
+        color: $main-blue;
+      }
+      .galaxy {
+        margin-top: 50px;
+  
+        .firstorbit {
+          border: 2px solid #ffc7d4;
+          border-radius: 50%;
+          width: 630px;
+          height: 630px;
+          position: relative;
+          .person-first {
+            position: absolute;
+            left: 450px;
+            top: 20px;
+            width: 82px;
+            height: 82px;
+          }
+          .pink-planet {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 91px;
+            top: 58px;
+          }
+          .person-second {
+            position: absolute;
+            width: 82px;
+            height: 82px;
+            left: 143px;
+            top: 556px;
+          }
+          .secondorbit {
+            border: 2px solid #ffc7d4;
+            border-radius: 50%;
+            width: 483px;
+            height: 483px;
+            position: absolute;
+            top: 74px;
+            left: 74px;
+            .person-third {
+              position: absolute;
+              width: 82px;
+              height: 82px;
+              left: 19px;
+              top: 315px;
+            }
+            .person-fourth {
+              position: absolute;
+              width: 82px;
+              height: 82px;
+              left: 464px;
+              top: 354px;
+            }
+            .thirdorbit {
+              border: 2px solid #ffc7d4;
+              border-radius: 50%;
+              width: 311px;
+              height: 311px;
+              position: absolute;
+              top: 87px;
+              left: 87px;
+              .person-fifth {
+                position: absolute;
+                width: 82px;
+                height: 82px;
+                left: 61px;
+                top: -42px;
+              }
+              .pink_first {
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                left: 278px;
+                top: 62px;
+              }
+              .pink_second {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 9.7px;
+                top: 226px;
+              }
+              .lastorbit {
+                border: 2px solid #ffc7d4;
+                border-radius: 50%;
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                top: 62.6px;
+                left: 62.6px;
+                .pink {
+                  position: absolute;
+                  left: 150px;
+                  top: 135px;
+                }
+                .person-sixth {
+                  position: absolute;
+                  width: 121px;
+                  height: 121px;
+                  left: 27px;
+                  top: 31px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .galaxy-img {
+        display: none;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1360px) {
+    #welcome {
+      .flex-container {
+        .galaxy {
+          display: none;
+        }
+  
+        .galaxy-img {
+          display: block;
+          width: 430px;
+          height: 430px;
+        }
+        .slide {
+          .hero-img {
+            width: 410px;
+            height: 370px;
+          }
+        }
+  
+        h5 {
+          font-size: 12px;
+          color: $main-blue;
+        }
+        h1 {
+          font-size: 48px;
+          margin-top: 7px;
+          width: 442px;
+        }
+        p {
+          font-size: 16px;
+          vertical-align: top;
+          line-height: 30pt;
+          margin: 0;
+        }
+        button {
+          padding: 15px 40px 15px 40px;
+          margin-top: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 990px) {
+    #welcome {
+      .flex-container {
+        .prev,
+        .next {
+          display: none;
+        }
+        .slide {
+          .hero-img {
+            width: 310px;
+            height: 270px;
+          }
+        }
+        .slider_nav {
+          .slider_navlink {
+            width: 14px;
+            height: 14px;
+          }
+        }
+  
+        .galaxy {
+          display: none;
+        }
+        .galaxy-img {
+          display: block;
+          width: 300px;
+          height: 300px;
+        }
+        h5 {
+          font-size: 6px;
+          color: $main-blue;
+        }
+        h1 {
+          font-size: 32px;
+          margin-top: 7px;
+          width: 302px;
+        }
+        p {
+          font-size: 10px;
+          vertical-align: top;
+          line-height: 30pt;
+          margin: 0;
+        }
+        button {
+          padding: 10px 30px 10px 30px;
+          margin-top: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #welcome {
+      .flex-container {
+        min-height: 500px;
+        .slide {
+          .hero-img {
+            display: none;
+          }
+        }
+        .galaxy-img {
+          display: none;
+          width: 330px;
+          height: 330px;
+          margin-top: 30px;
+        }
+        h5 {
+          font-size: 10px;
+          color: $main-blue;
+        }
+        h1 {
+          font-size: 35px;
+          margin-top: 7px;
+          width: 342px;
+        }
+        p {
+          font-size: 8px;
+          vertical-align: top;
+          line-height: 30pt;
+          margin: 0;
+        }
+        button {
+          padding: 10px 30px 10px 30px;
+          margin-top: 40px;
+          cursor: pointer;
+          display: block;
+        }
+        .learnbtn {
+          width: 163px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    #welcome {
+      .flex-container {
+        h1 {
+          font-size: 24px;
+          margin-top: 7px;
+          width: 242px;
+        }
+      }
+    }
+  }

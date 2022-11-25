@@ -1,0 +1,285 @@
+@import '../../../../abstracts/helpers';
+@import '../../../../abstracts/variables';
+
+#client {
+    .arrow {
+      display: block;
+      position: absolute;
+      color: white;
+      cursor: pointer;
+      font-size: 2em;
+      top: 50%;
+      // -webkit-transform: translateY(-50%);
+      // -ms-transform: translateY(-50%);
+      // -moz-transform: translateY(-50%);
+      // -o-transform: translateY(-50%);
+      // // transform: translateY(-50%);
+      -webkit-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      padding: 5px;
+      z-index: 22222222;
+      &::before {
+        cursor: pointer;
+      }
+      &:hover {
+        color: transparent;
+        border: 1px solid white;
+      }
+    }
+    .arrow.left {
+      left: -10px;
+    }
+    .arrow.right {
+      right: -10px;
+    }
+  
+    .row {
+      text-align: center;
+      color: $text-color;
+       margin-top: 70px;
+      width:100% ;
+      h5 {
+        font-size: 16px;
+        color: $main-blue;
+        margin-top: 25px;
+      }
+      h2 {
+        font-size: 52px;
+        margin-top: 37px;
+      }
+      p {
+        font-size: 14px;
+        vertical-align: top;
+        line-height: 24px;
+        width: 469px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+    .row-card {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      .card {
+        width: 590px;
+        min-height: 378px;
+        padding: 25px;
+        background-color: white;
+        margin: 10px;
+        text-align: center;
+        box-sizing: content-box;
+  
+        img {
+          border-radius: 50%;
+        }
+        h5 {
+          margin-top: 10px;
+          font-size: 15px;
+        }
+        p {
+          color: gray;
+          font-size: 13px;
+        }
+        .stars {
+          margin-top: 20px;
+        }
+        .comment {
+          color: black;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #client {
+      .row {
+        text-align: center;
+        color: $text-color;
+        margin-top: 70px;
+        h5 {
+          font-size: 13px;
+          color: $main-blue;
+          margin-top: 25px;
+        }
+        h2 {
+          font-size: 40px;
+          margin-top: 37px;
+        }
+        p {
+          font-size: 12px;
+          vertical-align: top;
+          line-height: 24px;
+          max-width: 469px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+      .row-card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 593px;
+        margin-top: 50px;
+        margin: 0 auto;
+        .card {
+          max-width: 501px;
+          min-height: 378px;
+          padding: 25px;
+          background-color: white;
+          margin: 10px;
+          text-align: center;
+          img {
+            border-radius: 50%;
+          }
+          h5 {
+            margin-top: 10px;
+            font-size: 15px;
+          }
+          p {
+            color: gray;
+            font-size: 13px;
+          }
+          .stars {
+            margin-top: 20px;
+          }
+          .comment {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    #client {
+      .row {
+        text-align: center;
+        color: $text-color;
+        margin-top: 70px;
+        h5 {
+          font-size: 10px;
+          color: $main-blue;
+          margin-top: 25px;
+        }
+        h2 {
+          font-size: 26px;
+          margin-top: 37px;
+        }
+        p {
+          font-size: 10px;
+          vertical-align: top;
+          line-height: 16px;
+          max-width: 469px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+      .row-card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 419px;
+        margin-top: 50px;
+        margin: 0 auto;
+        .card {
+          max-width: 401px;
+          min-height: 278px;
+          padding: 25px;
+          background-color: white;
+          margin: 10px;
+          text-align: center;
+          img {
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+          }
+          h5 {
+            margin-top: 10px;
+            font-size: 11px;
+          }
+          p {
+            color: gray;
+            font-size: 11px;
+          }
+          .stars {
+            margin-top: 20px;
+            img {
+              width: 17px;
+              height: 17px;
+            }
+          }
+          .comment {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #client {
+      .row {
+        text-align: center;
+        color: $text-color;
+        margin-top: 70px;
+        h5 {
+          font-size: 9px;
+          color: $main-blue;
+          margin-top: 25px;
+        }
+        h2 {
+          font-size: 20px;
+          margin-top: 37px;
+        }
+        p {
+          font-size: 9px;
+          vertical-align: top;
+          line-height: 24px;
+          max-width: 280px;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+      .row-card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 274px;
+        margin-top: 50px;
+        margin: 0 auto;
+        .card {
+          max-width: 255px;
+          min-height: 180px;
+          padding: 25px;
+          background-color: white;
+          margin: 10px;
+          text-align: center;
+          img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
+          h5 {
+            margin-top: 10px;
+            font-size: 8px;
+          }
+          p {
+            color: gray;
+            font-size: 7px;
+          }
+          .stars {
+            margin-top: 15px;
+            img {
+              width: 10px;
+              height: 10px;
+            }
+          }
+          .comment {
+            color: black;
+          }
+        }
+      }
+    }
+  }
